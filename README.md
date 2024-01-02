@@ -4,6 +4,10 @@
 
 This repository contains the code for the paper [Non-Rigid Shape Registration via Deep Functional Maps Prior](https://deepfunctionalregistration.github.io/)
 
+
+### This code is under construction. The final version of code will be released soon.
+
+
 ## Installation
 To install requirements:
 
