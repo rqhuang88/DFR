@@ -1,0 +1,15 @@
+tqdm
+numpy
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+pytorch3d==0.7.3
+hdf5storage
+omegaconf
+open3d==0.16.0              
+potpourri3d               
+pytorch3d==0.7.3
+scikit-image
+scikit-learn
+scipy==1.10.1
+tqdm 
+trimesh==3.20.1

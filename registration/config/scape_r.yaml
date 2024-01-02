@@ -1,0 +1,37 @@
+# dataset params
+dataset:
+  name: scape_dg
+  class: scape
+  root_dataset: data/
+  root_train: scape/
+  root_test: scape/
+
+source_temp_name : scape
+source_data_set_name : scape
+target_data_set_name :  scape
+model_path: ckpt/scape_diff.pth
+ 
+
+save_path: results/
+save_name: scape_on_scape_scape_template
+
+
+stage1:
+  rmse: 1
+  cd: 0.01
+  arap: 20
+  sr: 0.2
+
+stage2:
+  rmse: 0.01
+  cd: 1
+  arap: 1
+  sr: 0.2
+
+misc:
+  cuda: True
+  geo: False
+  dgpcl: True
+  device: 0
+
+
