@@ -16,8 +16,10 @@ pip install -r requirements.txt
 Installing PyTorch may require an ad hoc procedure, depending on your computer settings.
 
 ## Training
-
-Coming soon.
+In the DFM folder, run the following command to train our modified DGCNN model on the train set:
+```trian
+python train.py
+```
 
 ## Evaluation
 In the registration folder, run the following command to evaluate the trained model on the test set:
