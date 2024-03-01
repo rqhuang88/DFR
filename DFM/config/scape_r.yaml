@@ -1,0 +1,49 @@
+# dataset params
+dataset:
+  name: scape_open
+  subset: remeshed
+  type: vts
+  root_dataset: data/
+  root_train: SCAPE_r/
+  root_test: SCAPE_r/
+  root_geodist: geodist/
+  cache_dir: cache/
+
+# optimizer params
+optimizer:
+  lr: 2e-3
+  b1: 0.9
+  b2: 0.99
+  decay_iter: 10
+  decay_factor: 0.5
+
+training:
+  batch_size: 5
+  epochs: 20
+  model: dgcnnsample
+
+# fmap module params
+fmap:
+  n_fmap: 50  # number of eigenvectors used for fmap
+  k_eig: 128  # number of eigenvectors used for diffusion
+  n_feat: 128 # dimension of output features
+  C_in: 128 # dimension of input features (default:128; if C_in=3, xyz signal will be used; if C_in>3, WKS descs will be used)
+  lambda_: 100 # parameter 1 for Laplacian regularizer layer (default: 100)
+  resolvant_gamma: 0.5 # parameter 2 for Laplacian regularizer layer (default: 0.5)
+  robust: False
+
+# loss params
+loss:
+  w_bij: 1  # if one wants to train as a supervised method, one should set w_gt=True
+  w_ortho: 1  # if one wants to train as a supervised method, one should set w_gt=True
+  min_alpha: 1
+  max_alpha: 100
+
+# misc
+misc:
+  cuda: True
+  device: 0
+  checkpoint_interval: 1
+  log_interval: 2000
+
+
