@@ -34,12 +34,18 @@ the results will be saved in the results folder.
 If you use this code, please cite our paper.
 
 ```
-@article{jiang2023non,
-  title={Non-Rigid Shape Registration via Deep Functional Maps Prior},
-  author={Jiang, Puhua and Sun, Mingze and Huang, Ruqi},
-  journal={arXiv preprint arXiv:2311.04494},
-  year={2023}
+@inproceedings{NEURIPS2023_b654d615,
+ author = {Jiang, Puhua and Sun, Mingze and Huang, Ruqi},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Neumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {58409--58427},
+ publisher = {Curran Associates, Inc.},
+ title = {Non-Rigid Shape Registration via Deep Functional Maps Prior},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/b654d6150630a5ba5df7a55621390daf-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
 }
+
 ```
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/). 
