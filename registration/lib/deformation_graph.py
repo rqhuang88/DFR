@@ -9,8 +9,7 @@ from scipy.spatial import KDTree
 from psbody.mesh import Mesh
 
 from .mesh_sampling import generate_transform_matrices
-from utils import farthest_point_sample
-from .utils import col, batch_rodrigues
+from .utils import col, batch_rodrigues,farthest_point_sample
 
 eps = sys.float_info.epsilon
 import matplotlib.pyplot as plt
