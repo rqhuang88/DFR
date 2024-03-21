@@ -17,9 +17,8 @@ import numpy as np
 from zmq import device
 
 from loss import chamfer_dist
-from lib.deformation_graph_old import  DeformationGraph_geod
+from lib.deformation_graph import  DeformationGraph
 import open3d as o3d
-import random
 
 parser = argparse.ArgumentParser(description="Launch the eval of DQFM model.")
 parser.add_argument("--config", type=str, default="scape_r", help="Config file name")  ## name -> scape faust
@@ -81,7 +80,7 @@ with torch.no_grad():
         V1_sample = data["shape1"]['vts_sample'].unsqueeze(0).to(device)
         FPS1 = data["shape1"]['fps'].unsqueeze(0).to(device)
 
-        dg = DeformationGraph_geod()
+        dg = DeformationGraph()
 
         if cfg["misc"]["dgpcl"]:
             geod = compute_geodesic_distmat(source_mesh_V.squeeze(0).cpu().numpy(),source_mesh_F.squeeze(0).cpu().numpy())      

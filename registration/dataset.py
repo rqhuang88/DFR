@@ -41,7 +41,6 @@ class ScapeDataset(Dataset):
                 self.combinations.append((0,0))
                 
                 
-                
                 return
             print("  --> dataset not in cache, repopulating")
 
