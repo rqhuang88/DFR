@@ -1,5 +1,5 @@
 # Datasets
-Within each dataset folder, the following structure is expected:
+Within each dataset folder, you should put your data in the data folder and the following structure is expected:
 
     SCPAE_r/
     ├── shapes_train
