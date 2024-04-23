@@ -15,6 +15,16 @@ pip install -r requirements.txt
 
 Installing PyTorch may require an ad hoc procedure, depending on your computer settings.
 
+
+## Dataset
+We have uploaded the SCAPE_r dataset. And you can make your own dataset like:
+
+SCAPE_r
+--shapes_train
+--shapes_test
+--corres(vts files, if not, you should delete the vts_list in dataset.py)
+
+
 ## Training
 In the DFM folder, run the following command to train our modified DGCNN model on the train set:
 ```trian
